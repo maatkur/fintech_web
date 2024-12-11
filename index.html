@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Movimentações</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white rounded shadow-sm">
+            <div>
+                <h4>Bom dia, Ciclano Beltrano!</h4>
+            </div>
+            <button class="btn btn-light">
+                <i class="fas fa-bell"></i>
+            </button>
+        </header>
+
+        <section class="d-flex justify-content-around align-items-center py-4 my-4 rounded bg-light shadow-sm">
+            <div class="text-center">
+                <h6 class="text-success">
+                    <i class="fas fa-arrow-circle-up"></i> Saldo Total
+                </h6>
+                <p class="mb-0 fs-5"><strong>R$ 3.650,00</strong></p>
+            </div>
+            <div class="text-center">
+                <h6 class="text-danger">
+                    <i class="fas fa-arrow-circle-down"></i> Gastos
+                </h6>
+                <p class="mb-0 fs-5"><strong>R$ 1.350,00</strong></p>
+            </div>
+        </section>
+
+        <section>
+            <h5 class="mb-3">Histórico de Transações</h5>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>Categoria</th>
+                            <th>Valor (R$)</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10/12/2024</td>
+                            <td>Pagamento de aluguel <i class="fas fa-home text-primary"></i></td>
+                            <td>Gasto</td>
+                            <td class="text-danger">-1.200,00</td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-edit"></i> Editar</button>
+                                <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09/12/2024</td>
+                            <td>Salário <i class="fas fa-wallet text-success"></i></td>
+                            <td>Entrada</td>
+                            <td class="text-success">+5.000,00</td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-edit"></i> Editar</button>
+                                <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>08/12/2024</td>
+                            <td>Compra no supermercado <i class="fas fa-shopping-cart text-danger"></i></td>
+                            <td>Gasto</td>
+                            <td class="text-danger">-150,00</td>
+                            <td>
+                                <button class="btn btn-sm btn-info"><i class="fas fa-edit"></i> Editar</button>
+                                <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

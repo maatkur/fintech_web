@@ -1,0 +1,144 @@
+/* CSS para estilização da página de movimentações */
+
+body {
+  background-color: #f2f8f8;
+  font-family: 'Arial', sans-serif;
+  color: #5e8581;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #388E3C;
+  color: #5e8581;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 20px;
+}
+
+header.bg-primary {
+  background-color: #5b8c88 !important; /* Use !important se for necessário */
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+header .balance {
+  font-size: 2rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+header .details {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+
+header .details span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header .details span.income {
+  color: #5e8581;
+  font-weight: bold;
+}
+
+header .details span.expense {
+  color: #D32F2F;
+  font-weight: bold;
+}
+
+.table-responsive {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: #E0F2F1;
+  color: #004D40;
+}
+
+table tbody tr:hover {
+  background-color: #F1F1F1;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #F9F9F9;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #FFFFFF;
+}
+
+td {
+  padding: 15px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.actions button {
+  margin-right: 5px;
+}
+
+.actions .btn {
+  font-size: 0.9rem;
+}
+
+.actions .btn-info {
+  background-color: #29B6F6;
+  border: none;
+}
+
+.actions .btn-danger {
+  background-color: #E53935;
+  border: none;
+}
+
+.actions .btn-info:hover {
+  background-color: #0288D1;
+}
+
+.actions .btn-danger:hover {
+  background-color: #B71C1C;
+}
+
+
+.add-btn:hover {
+  background-color: #2E7D32;
+  transform: scale(1.05);
+}
+
+.transaction-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+/* Alterando a cor de fundo da linha do cabeçalho da tabela */
+table thead tr {
+  background-color: #5b8c88 !important;  /* Cor personalizada */
+  color: white !important;  /* Garante que o texto fique visível */
+}
+
+/* Caso você queira alterar apenas a cor das células do cabeçalho */
+table thead th {
+  background-color: #5b8c88 !important;
+  color: white !important;
+}
